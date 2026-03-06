@@ -1,6 +1,6 @@
 {
   "schema": "clawhub/skill/v1",
-  "id": "twitter",
+  "id": "twitter-openclaw",
   "name": "Twitter Skill",
   "description": "Twitter/X全能助手 — 推文生成、内容发布与管理",
   "version": "1.0.0",
