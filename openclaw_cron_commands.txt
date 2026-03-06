@@ -1,0 +1,32 @@
+# 🚀 Twitter自动化cron命令
+# 在OpenClaw中执行以下命令创建定时任务
+
+# 上午任务
+openclaw cron add --name '上午推文发布' --expr '0 1 * * *' --command 'cd /root/.openclaw/workspace/skills/twitter-publish && ./run_twitter_task.sh morning_tweet'
+openclaw cron add --name '上午增长会话' --expr '30 2 * * *' --command 'cd /root/.openclaw/workspace/skills/twitter-publish && ./run_twitter_task.sh morning_growth'
+
+# 中午任务
+openclaw cron add --name '中午教育推文' --expr '0 4 * * *' --command 'cd /root/.openclaw/workspace/skills/twitter-publish && ./run_twitter_task.sh noon_educational'
+openclaw cron add --name '中午互动增强' --expr '30 5 * * *' --command 'cd /root/.openclaw/workspace/skills/twitter-publish && ./run_twitter_task.sh noon_engagement'
+
+# 下午任务
+openclaw cron add --name '下午案例推文' --expr '0 7 * * *' --command 'cd /root/.openclaw/workspace/skills/twitter-publish && ./run_twitter_task.sh afternoon_case'
+openclaw cron add --name '下午增长会话' --expr '30 8 * * *' --command 'cd /root/.openclaw/workspace/skills/twitter-publish && ./run_twitter_task.sh afternoon_growth'
+
+# 晚上任务
+openclaw cron add --name '晚上成功故事' --expr '0 10 * * *' --command 'cd /root/.openclaw/workspace/skills/twitter-publish && ./run_twitter_task.sh evening_success'
+openclaw cron add --name '晚间互动会话' --expr '30 12 * * *' --command 'cd /root/.openclaw/workspace/skills/twitter-publish && ./run_twitter_task.sh evening_engagement'
+
+# 每周线程任务
+openclaw cron add --name '周一功能线程' --expr '0 6 * * 1' --command 'cd /root/.openclaw/workspace/skills/twitter-publish && ./run_twitter_task.sh monday_thread'
+openclaw cron add --name '周三案例线程' --expr '0 6 * * 3' --command 'cd /root/.openclaw/workspace/skills/twitter-publish && ./run_twitter_task.sh wednesday_thread'
+openclaw cron add --name '周五教育线程' --expr '0 6 * * 5' --command 'cd /root/.openclaw/workspace/skills/twitter-publish && ./run_twitter_task.sh friday_thread'
+
+# 查看所有任务
+openclaw cron list
+
+# 测试单个任务
+openclaw cron run --name '上午推文发布'
+
+# 删除任务（如果需要）
+# openclaw cron remove --name '任务名称'
