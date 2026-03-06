@@ -1,0 +1,36 @@
+{
+  "schema": "clawhub/skill/v1",
+  "id": "twitter",
+  "name": "Twitter Skill",
+  "description": "Twitter/X全能助手 — 推文生成、内容发布与管理",
+  "version": "1.0.0",
+  "author": "Andy",
+  "license": "MIT",
+  "tags": ["twitter", "social-media", "automation", "api"],
+  "compatibility": {
+    "openclaw": ">=2026.3.0"
+  },
+  "requirements": {
+    "python": ">=3.8",
+    "packages": ["tweepy>=4.0.0"]
+  },
+  "files": [
+    "SKILL.md",
+    "twitter_tool.py",
+    "test_skill.py",
+    "INSTALL.md"
+  ],
+  "install": {
+    "type": "copy",
+    "source": ".",
+    "destination": "$SKILLS_DIR/twitter"
+  },
+  "config": {
+    "env": [
+      "TWITTER_CONSUMER_KEY",
+      "TWITTER_CONSUMER_SECRET", 
+      "TWITTER_ACCESS_TOKEN",
+      "TWITTER_ACCESS_TOKEN_SECRET"
+    ]
+  }
+}

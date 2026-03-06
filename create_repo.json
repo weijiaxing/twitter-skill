@@ -1,0 +1,12 @@
+{
+  "name": "twitter-skill",
+  "description": "Twitter Skill for OpenClaw - 推文生成和自动化发布",
+  "homepage": "https://clawhub.ai",
+  "private": false,
+  "has_issues": true,
+  "has_projects": false,
+  "has_wiki": false,
+  "has_downloads": true,
+  "auto_init": false,
+  "license_template": "mit"
+}

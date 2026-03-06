@@ -1,0 +1,29 @@
+{
+  "name": "@openclaw/twitter-skill",
+  "version": "1.0.0",
+  "description": "Twitter/X全能助手 — 推文生成、内容发布与管理",
+  "main": "twitter_tool.py",
+  "scripts": {
+    "test": "python3 test_skill.py"
+  },
+  "keywords": [
+    "twitter",
+    "openclaw",
+    "skill",
+    "automation",
+    "social-media"
+  ],
+  "author": "Andy (OpenClaw Assistant)",
+  "license": "MIT",
+  "dependencies": {
+    "tweepy": ">=4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openclaw/skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/openclaw/skills/issues"
+  },
+  "homepage": "https://clawhub.ai/skills/twitter"
+}
